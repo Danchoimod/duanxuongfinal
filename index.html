@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Can Tho travel</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
@@ -13,9 +16,11 @@
     <div class="app">
         <!-- phần đầu  -->
         <div class="header">
-            <nav class="menu">
+            <div class="mobile-menu-contain">
+            <nav id="mobile-menu" class="menu hidden">
+                <div class="mobile-menu-icon" onclick="toggleMenu();">☰</div>
                 <ul>
-                    <img src="img/logo.jpg" alt="">
+                    <img src="img/logo.png" alt="">
                     <li><a href="">Trang chủ</a></li>
                     <li><a href="">Giới thiệu</a></li>
                     <li><a href="">Địa danh</a>
@@ -26,12 +31,16 @@
                             <li><a href="">Giàn Gừa</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Tin tức</a></li>
-                    <li><input type="text" placeholder="Tìm kiếm">
+                    <li> <a href="">Tin tức</a></li>
+                    <li id="searchBar"><input type="text" placeholder="Tìm kiếm">
                     </li>
                 </ul>
             </nav>
-            <img class="banner" src="img/banner.jpg" alt="">
+        </div>
+            <!-- banner  -->
+            <div class="banner">
+            <img src="img/finalBanner.png" alt="">
+            </div>
         </div>
         <!-- phần nội dung -->
         <div class="content">
@@ -42,11 +51,11 @@
                         <p>Chúng tôi tự hào giới thiệu với bạn một trải nghiệm du lịch tuyệt vời, nơi bạn có thể khám
                             phá những điểm đến độc đáo, trải nghiệm văn hóa đa dạng và tận hưởng cảnh quan thiên nhiên!
                         </p>
-                        <span>
+                        <div class="hightlight">
                             - Trải nghiệm du lịch độc đáo <br>
                             - Hướng dẫn chuyên nghiệp <br>
                             - Dịch vụ chất lượng cao <br>
-                        </span>
+                        </div>
                     </div>
                     <div class="pic">
                         <img src="img/cantho.jpg" alt="">
@@ -59,7 +68,7 @@
                     <div class="pic1">
                         <span>Bến Ninh Kiều</span>
                         <img src="https://mykhanh.com/files/images/C%E1%BA%A6U%20T%C3%8CNH%20Y%C3%8AU%20-%20B%E1%BA%BEN%20NINH%20KI%E1%BB%80U.jpg"
-                            alt="">
+                            alt="">                       
                     </div>
                     <div class="pic2">
                         <span>Chùa Phật Học</span>
@@ -79,13 +88,100 @@
             </div>
             <div class="landmarks">
                 <div class="landmark1">
-                    <h3>1. Chùa Phật Học</h3>
-                    <p>Chùa Phật Học Cần Thơ là ngôi chùa lớn với kiến trúc uy nghiêm, mang đậm nét Phật giáo. Nằm ngay
+                    <div class="text">
+                        <h3>1. Chùa Phật Học</h3>
+                        <p>Chùa Phật Học Cần Thơ là ngôi chùa lớn với kiến trúc uy nghiêm, mang đậm nét Phật giáo. Nằm ngay
                         trung tâm thành phố, chùa không chỉ là nơi chiêm bái linh thiêng mà còn là điểm đến thanh tịnh,
                         giúp du khách tìm về sự an yên giữa lòng đô thị nhộn nhịp.</p>
-                    <img src="https://tourdulichmientay.vn/wp-content/uploads/2020/07/chua-phat-hoc-can-tho-2.jpg"
-                        alt="">
+                    </div>                   
+                        <div class="pics">
+                            <div class="pic-left">
+                                <img src="https://tourdulichmientay.vn/wp-content/uploads/2020/07/chua-phat-hoc-can-tho-2.jpg"
+                                alt="">
+                            </div>
+                            <div class="pic-right">
+                                <img src="https://ticotravel.com.vn/wp-content/uploads/2024/08/chua-phat-hoc-16.jpg" alt="">
+                                <img src="https://r2.nucuoimekong.com/wp-content/uploads/Phat-tu-hanh-huong-ve-chua.jpg" alt="">
+                            </div>
+                        </div>
+                    <div class="address">
+                        <p>Địa chỉ: 34 Hoà Bình, Tân An, Ninh Kiều, Cần Thơ.</p>
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href="#" class="btn-explore">Khám phá</a>
+                    </div>                       
                 </div>
+
+
+                <div class="landmark1">
+                    <div class="text">
+                        <h3>2.Chợ Nổi Cái Răng</h3>
+                        <p>Chợ nổi Cái Răng là điểm giao thương sầm uất, nơi hàng trăm ghe thuyền tụ họp buôn bán trên sông từ sáng sớm. Du khách đến đây không chỉ thưởng thức đặc sản miền Tây mà còn trải nghiệm nét văn hóa sông nước độc đáo.</p>
+                    </div>                   
+                    <div class="pics">
+                            <div class="pic-left">
+                                <img src="https://btnmt.1cdn.vn/2019/03/04/h1_2.jpg"alt="">
+                            </div>
+                            <div class="pic-right">
+                                <img src="https://danatravel.vn/data/images/mt7.png" alt="">                            
+                                <img src="https://cdn.attractionsvietnam.com/uploads/gemini/66dfa4bfd339e.webp" alt="">
+                            </div>
+                        </div>
+                    <div class="address">
+                        <p>Địa chỉ: 46 Hai Bà Trưng, Tân An, Ninh Kiều, Cần Thơ</p>
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href="#" class="btn-explore">Khám phá</a>
+                    </div>                     
+                </div>
+
+                <div class="landmark1">
+                    <div class="text">
+                        <h3>3. Bến Ninh Kiều</h3>
+                        <p>Bến Ninh Kiều Cần Thơ mang vẻ đẹp vừa yên bình, thơ mộng, lại vừa có nét trẻ trung, hiện đại chắc chắn sẽ đem tới cho bạn những kỉ niệm khó quên khi đặt chân tới thủ phủ miền Tây này.</p>
+                    </div>                   
+                    <div class="pics">
+                        <div class="pic-left">
+                            <img src="https://flane.vn/wp-content/uploads/2024/02/ben-ninh-kieu-can-tho-bieu-tuong-cua-manh-dat-can-tho.jpg"alt="">
+                        </div>
+                        <div class="pic-right">
+                            <img src="https://thamhiemmekong.com/wp-content/uploads/2019/07/ben-ninh-kieu-can-tho.jpg" alt="">                     
+                            <img src="https://ik.imagekit.io/tvlk/blog/2023/05/ben-ninh-kieu-cover.jpg" alt="">
+                        </div>                       
+                    </div>
+                    <div class="address">
+                        <p>Địa chỉ: Đường Hai Bà Trưng, phường Tân An, quận Ninh Kiều, thành phố Cần Thơ.</p>
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href="#" class="btn-explore">Khám phá</a>
+                    </div>
+                        
+                </div>
+
+                <div class="landmark1">
+                    <div class="text">
+                        <h3>4. Giàn Gừa</h3>
+                        <p>Khu di tích lịch sử Giàn Gừa là một trong những niềm tự hào của vùng đất Tây Đô. Ngày nay, đây còn là nơi lưu giữ nhiều dấu tích lịch sử về thời kỳ vàng son của dân tộc.</p>
+                    </div>                   
+                        <div class="pics">
+                            <div class="pic-left">
+                                <img src="https://dulichviet.com.vn/images/bandidau/kham-pha-khu-di-tich-gian-gua-can-tho.jpg"
+                                alt="">
+                            </div>
+                            <div class="pic-right">
+                                <img src="https://thamhiemmekong.com/wp-content/uploads/2019/06/di-tich-gian-gua-1.jpg" alt="">
+                                <img src="https://scontent.iocvnpt.com/resources/portal/Images/CTO/superadminportal.cto/DiaDiem/GianGua/giangua_637022434872591525.jpg" alt="">
+                            </div>
+                        </div>
+                    <div class="address">
+                        <p>Địa chỉ: ấp Nhơn Khánh, xã Nhơn Nghĩa, huyện Phong Điền, thành phố Cần Thơ</p>
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href="#" class="btn-explore">Khám phá</a>
+                    </div>   
+                </div>
+
+
             </div>
             <div class="star">
                 <span class="star-five" width="10" height="10">
@@ -162,7 +258,8 @@
                 </div>
             </section>
             <div class="near-footer">
-                Cần Thơ – Hồn quê sông nước, sắc màu văn hóa, chờ bạn khám phá!
+                <p>                Cần Thơ – Hồn quê sông nước, sắc màu văn hóa, chờ bạn khám phá!
+                </p>
             </div>
         
 
@@ -186,6 +283,7 @@
                 </div>
             </div>
     </div>
+    <script src="js/js.js"></script>
 </body>
 
 </html>
