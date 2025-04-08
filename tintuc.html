@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can Tho travel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/tintuc.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- phần đầu  -->
+        <!-- phần đầu  -->
+        <div class="header">
+          <div class="mobile-menu-contain">
+              <nav id="mobile-menu" class="menu hidden">
+                  <div class="mobile-menu-icon" onclick="toggleMenu();">☰</div>
+                  <ul>
+                      <img src="img/logo.png" alt="">
+                      <li><a href="index.html">Trang chủ</a></li>
+                      <li><a href="gioithieu.html">Giới thiệu</a></li>
+                      <li><a href="">Địa danh</a>
+                          <ul>
+                              <li><a href="">Chùa Phật Học</a></li>
+                              <li><a href="">Chợ nổi Cái Răng</a></li>
+                              <li><a href="">Bến Ninh kiều</a></li>
+                              <li><a href="">Giàn Gừa</a></li>
+                          </ul>
+                      </li>
+                      <li> <a href="tintuc.html">Tin tức</a></li>
+                      <li> <a href="lienhe.html">Liên hệ</a></li>
+                      <li id="searchBar"><input type="text" placeholder="Tìm kiếm">
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+            <!-- banner  -->
+            <div class="banner">
+                <img src="https://thanhnien.mediacdn.vn/Uploaded/quochungqc/2022_12_14/anh-1-5120.jpg" alt="Banner">
+                <div class="overlay-text">
+                    <br><br>
+                    <h1 class="title">Tin tức</h1>
+                    <p class="breadcrumb">trang chủ > Tin tức</p>
+                </div>
+            </div>
+
+            <!-- section tin tức đầu tiên -->
+            <div class="content-section">
+                <div class="left-column">
+                    <div class="image-wrapper">
+                        <img src="https://cdn3.olm.vn/upload/img_teacher/0909/img_teacher_2024-09-09_66deb22e1c344.jpg" alt="Giới thiệu Cần Thơ">
+                    </div>
+                    <p class="caption">Giới thiệu về thành phố Cần Thơ</p>
+                </div>
+
+                <div class="right-column">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm kiếm...">
+                    </div>
+
+                    <div class="category-box">
+                        <h3><span class="highlight-line"></span> Chuyên mục</h3>
+                        <ul class="categories">
+                            <li><input type="checkbox"> Đồ ăn</li>
+                            <li><input type="checkbox"> Chủ đề mới</li>
+                            <li><input type="checkbox"> Mẹo và chủ đề</li>
+                            <li><input type="checkbox"> Du lịch</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- phần nội dung -->
+        <div class="content">
+            <div class="main-layout">
+                <!-- Cột trái: Bài viết -->
+                <div class="left-column">
+                    <article class="post">
+                        <img src="https://cdn2.ivivu.com/2020/06/22/09/ivivu-cho-noi-bia-204x153.gif" alt="Chợ nổi Cái Răng">
+                        <h4>Du lịch Cần Thơ: Tha hồ mua sắm ở chợ nổi</h4>
+                        <p>Trải nghiệm chợ nổi đặc trưng văn hóa miền Tây sông nước, thu hút đông đảo du khách trong và ngoài nước ghé thăm mỗi năm.</p>
+                    </article><hr>
+
+                    <article class="post">
+                        <img src="https://www.wowweekend.vn/document_root/images/upload/article/news20200309160519_01.jpg" alt="Miếu Ông Cần Thơ">
+                        <h4>Công trình nghệ thuật đặc sắc: Miếu Ông</h4>
+                        <p>Miếu Ông là một trong những điểm đến tâm linh và kiến trúc độc đáo giữa lòng Cần Thơ.</p>
+                    </article><hr>
+
+                    <article class="post">
+                        <img src="https://dulichchat.com/wp-content/uploads/2020/04/am-thuc-ben-tre-dulichchat-2.jpg" alt="Bánh tét lá cẩm">
+                        <h4>Đặc sản hấp dẫn tại Cần Thơ</h4>
+                        <p>Bánh tét lá cẩm mang hương vị truyền thống, hấp dẫn cả người dân lẫn du khách.</p>
+                    </article><hr>
+                </div>
+
+                <!-- Cột phải: Sidebar -->
+                <div class="right-column">
+                    <!-- Bài viết mới nhất -->
+                    <section class="latest-posts">
+                        <h3>Bài viết mới nhất</h3>
+                        <ul>
+                            <li><img src="https://i.imgur.com/9n5k9Pi.jpg" alt=""> Chợ nổi Cái Răng Cần Thơ</li>
+                            <li><img src="https://i.imgur.com/GlBsjOL.jpg" alt=""> Miếu Ông - Thiên đường tâm linh</li>
+                            <li><img src="https://i.imgur.com/H7BPcgR.jpg" alt=""> Đặc sản hấp dẫn</li>
+                            <li><img src="https://i.imgur.com/UCALDLW.jpg" alt=""> Cầu Cần Thơ</li>
+                        </ul>
+                    </section>
+
+                    <!-- Sự kiện -->
+                    <section class="event-highlight">
+                        <h3>SỰ KIỆN NỔI BẬT</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsVgmwGjLXyBu-udNNg7YB0x6N2LSVZTaoD7dzcb67MqAPqoJj" alt="Sự kiện Cần Thơ">
+                    </section>
+
+                    <!-- Khám phá -->
+                    <section class="explore">
+                        <h3>KHÁM PHÁ</h3>
+                        <div class="explore-options">
+                            <div>
+                                <img src="https://i.imgur.com/6AZIvVP.jpg" alt="Đi đâu">
+                                <p>Đi đâu?</p>
+                            </div>
+                            <div>
+                                <img src="https://i.imgur.com/oY93K6J.jpg" alt="Ăn gì">
+                                <p>Ăn gì?</p>
+                            </div>
+                            <div>
+                                <img src="https://i.imgur.com/UCALDLW.jpg" alt="Ở đâu">
+                                <p>Ở đâu?</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- phần dưới cùng -->
+        <div class="footer">
+            <div class="row-footer">
+                <div class="col about-us">
+                    <p class="footer-title">Về chúng tôi</p>
+                    <p>Our Story</p>
+                    <p>Travel blogs & Tips</p>
+                    <p>Working with us</p>
+                    <p>Be our partners</p>
+                </div>
+                <div class="col contact">
+                    <p class="footer-title">Thông tin liên hệ</p>
+                    <p>Tòa nhà FPT Polytechnic, đường số 22, phường Thường Thạnh, quận Cái Răng, TP Cần Thơ - 098 388 1100</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="support"></div>
+
+    <script src="js/js.js"></script>
+    <script type="module" src="js/firebase.js"></script>
+</body>
+
+</html>

@@ -1,56 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Can Tho travel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/gioithieu.css">
 </head>
-<body>
-    <div class="header">
-        <nav id="mobile-menu" class="menu hidden">
-            <div class="mobile-menu-icon" onclick="toggleMenu();">☰</div>
-            <ul>
-                <img src="img/logo.png" alt="">
-                <li><a href="">Trang chủ</a></li>
-                <li><a href="">Giới thiệu</a></li>
-                <li><a href="">Địa danh</a>
-                    <ul>
-                        <li><a href="">Chùa Phật Học</a></li>
-                        <li><a href="">Chợ nổi Cái Răng</a></li>
-                        <li><a href="">Bến Ninh kiều</a></li>
-                        <li><a href="">Giàn Gừa</a></li>
-                    </ul>
-                </li>
-                <li> <a href="">Tin tức</a></li>
-                <li><input type="text" placeholder="Tìm kiếm">
-                </li>
-            </ul>
-        </nav>
-    </div>
 
-    <div class="content">
-        <div class="contact-text">
-            <h1>Giới thiệu</h1>
-            <p>trang chủ &gt; Giới thiệu</p>
-        </div>
-    </div>
-    <div class="intro">
-        <div class="intro-text">
-            <h2>Trải nghiệm du lịch độc đáo và kỷ niệm khó quên.</h2>
-            <p>
-              Chúng tôi tự hào giới thiệu với bạn một trải nghiệm du lịch tuyệt vời, nơi bạn có thể khám phá những điểm đến độc đáo, trải nghiệm văn hóa đa dạng và tận hưởng cảnh quan thiên nhiên tuyệt đẹp.
-            </p>
-            <p>
-              Với sự tận tâm và chuyên nghiệp, chúng tôi cam kết mang đến cho bạn những kỷ niệm vô giá và độc đáo trên mỗi hành trình.
-            </p>
-            <div class="services">
-                <div>Hướng dẫn chuyên nghiệp.</div>
-                <div>Dịch vụ chất lượng</div>
+<body>
+    <div class="app">
+        <!-- phần đầu  -->
+        <div class="header">
+            <div class="mobile-menu-contain">
+                <nav id="mobile-menu" class="menu hidden">
+                    <div class="mobile-menu-icon" onclick="toggleMenu();">☰</div>
+                    <ul>
+                        <img src="img/logo.png" alt="">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="">Địa danh</a>
+                            <ul>
+                                <li><a href="">Chùa Phật Học</a></li>
+                                <li><a href="">Chợ nổi Cái Răng</a></li>
+                                <li><a href="">Bến Ninh kiều</a></li>
+                                <li><a href="">Giàn Gừa</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="tintuc.html">Tin tức</a></li>
+                        <li> <a href="lienhe.html">Liên hệ</a></li>
+                        <li id="searchBar"><input type="text" placeholder="Tìm kiếm">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- banner  -->
+            <div class="banner">
+                <img src="https://media.mia.vn/uploads/blog-du-lich/bam-may-lien-tuc-voi-nhung-dia-diem-chup-hinh-dep-can-tho-1650301511.jpg"
+                    alt="">
             </div>
         </div>
-        <div class="intro-img">
-            <img src="" alt="">
+        <!-- phần nội dung -->
+        <div class="content">
+            <div class="traiNghiem">
+                <div class="text">
+                    <h4>TRẢI NGHIỆM DU LỊCH ĐỘC ĐÁO VÀ KỶ NIỆM KHÓ QUÊN.</h4> <br>
+                    <p>Chúng tôi tụ hào giới thiệu với bạn một trãi nghiệm du lịch tuyệt vời, nơi bạn có thể khám phá
+                        những điểm đến độc đáo,
+                        trải nghiệm văn hóa đa dạng và tận hưởng cảnh quan thiên nhiên tuyệt đẹp. <br> <br>
+                        Với sự tận tâm và chuyên nghiệp, chúng tôi cam kết mang đến cho bạn những kỷ niệm vô giá và độc
+                        đáo trên mỗi hành trình.
+                    </p>
+                </div>
+                <div class="anh">
+                    <p>Hướng dẫn chuyên nghiệp. <br> <br>Dịch vụ chất lượng.</p>
+                    <img src="https://toplist.vn/images/800px/cau-can-tho-11972.jpg" alt="">
+                </div>
+            </div>
+            <div class="cali">
+                <div class="camKet">
+                    <h3>Cam Kết Của Chúng Tôi</h3>
+                    <br>
+                    <p>ĐẢM BẢO TRẢI NGHIỆM DU LỊCH TỐT NHẤT CHO BẠN</p>
+                    <br>
+                    <p>Chúng tôi cam kết cung cấp cho bạn trải nghiệm du lịch tuyệt vời và đáng nhớ, từ việc đặt vé đến
+                        khám phá điểm đến. Với những cam kết của chúng tôi, bạn có thể yên tâm rằng chúng tôi sẽ luôn
+                        đồng hành và đảm bảo sự hài lòng của bạn.</p>
+                </div>
+                <div class="banCamKet">
+                    <div>
+                        <h4>Giá tốt nhất</h4>
+                        <p>Chúng tôi cam kết mang đến cho bán giá cả cạnh tranh và ưu đãi đặc biệt</p>
+                    </div>
+                    <div>
+                        <h4>Đa dạng điểm đến</h4>
+                        <p>Chúng tôi cung cấp một loạt các điểm đến hấp dẫn trên toàn thế giới</p>
+                    </div>
+                    <div>
+                        <h4>Dịch vụ chất lượng</h4>
+                        <p>Chúng tôi cam kết hợp tác với các đối tác uy tín để đảm bảo chất lượng</p>
+                    </div>
+                </div>
+            </div>
+            <div class="damMay">
+                <img class="hinhdammay" src="img/clouds.png" alt="">
+                <h1>Dịch vụ nổi bật</h1>
+            </div>
+            <div class="danhGia">
+                <div class="top">
+                    <h3>ĐÁNH GIÁ KHÁCH HÀNG</h3> <br>
+                    <P>Chúng tôi tự hào khi nhận được đánh giá tích cực này và cam kết tiếp tục mang đến trải nghiệm du lịch tuyệt vời cho khách hàng của mình.</P>
+                </div>
+                <div class="comment">
+                    <div class="cm">
+                        <p>Tuyệt vời <br>
+                            ⭐⭐⭐⭐⭐<br>
+                            Trải nghiệm tuyệt vời! Tôi rất hài lòng với dịch vụ chuyên nghiệp và chu đáo của đội ngũ nhân viên. 
+                            Họ đã tận tâm tư vấn và đáp ứng đúng mong đợi của tôi. Chắc chắn sẽ quay lại và giới thiệu cho bạn bè của tôi.
+                        </p>
+                        <div class="avatar">
+                            <img src="https://png.pngtree.com/png-clipart/20190921/original/pngtree-user-avatar-boy-png-image_4693645.jpg" alt="">
+                            <p>Lê Hảo <br>Khách hàng</p>
+                        </div>
+                    </div>
+                    <div class="cm">
+                        <p>Tốt <br>
+                            ⭐⭐⭐⭐⭐ <br>
+                            Trải nghiệm tuyệt vời! Tôi rất hài lòng với dịch vụ chuyên nghiệp và chu đáo của đội ngũ nhân viên. 
+                            Họ đã tận tâm tư vấn và đáp ứng đúng mong đợi của tôi. Chắc chắn sẽ quay lại và giới thiệu cho bạn bè của tôi.
+                        </p>
+                        <div class="avatar">
+                            <img src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-business-people-avatar-icon-user-profile-free-vector-png-image_4815126.jpg" alt="">
+                            <p>An An <br>Khách hàng</p>
+                        </div>
+                    </div>
+                    <div class="cm">
+                        <p>Tuyệt vời <br>
+                            ⭐⭐⭐⭐⭐ <br>
+                            Trải nghiệm tuyệt vời! Tôi rất hài lòng với dịch vụ chuyên nghiệp và chu đáo của đội ngũ nhân viên. 
+                            Họ đã tận tâm tư vấn và đáp ứng đúng mong đợi của tôi. Chắc chắn sẽ quay lại và giới thiệu cho bạn bè của tôi.
+                        </p>
+                        <div class="avatar">
+                            <img src="https://p7.hiclipart.com/preview/255/44/978/avatar-icon-3d-character-icon-vector-material.jpg" alt="">
+                            <p>Bạch Ngân <br>Khách hàng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dangKy">
+                
+            </div>
+        </div>
+        <!-- phần dưới cùng -->
+        <div class="footer">
+            <div class="row-footer">
+                <div class="col about-us">
+                    <p class="footer-title">Về chúng tôi</p>
+                    <p>Our Story</p>
+                    <p>travel blogs & Tips</p>
+                    <p>Working with us</p>
+                    <p>Be our partners</p>
+                </div>
+                <div class="col contact">
+                    <p class="footer-title">Thông tin liên hệ</p>
+                    <p>Toà nhà FPT Polytechnic,
+                        đường số 22, phường Thường Thạnh,
+                        quận Cái Răng, TP Cần Thơ-098 388 1100
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="support">
+    </div>
+    <script src="js/js.js"></script>
+    <script type="module" src="js/firebase.js"></script>
 </body>
+
 </html>

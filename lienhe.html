@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can Tho travel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/lienhe.css">
+</head>
+
+<body>
+    <div class="app">
+        <!-- phần đầu  -->
+        <div class="header">
+            <div class="mobile-menu-contain">
+                <nav id="mobile-menu" class="menu hidden">
+                    <div class="mobile-menu-icon" onclick="toggleMenu();">☰</div>
+                    <ul>
+                        <img src="img/logo.png" alt="">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="">Địa danh</a>
+                            <ul>
+                                <li><a href="">Chùa Phật Học</a></li>
+                                <li><a href="">Chợ nổi Cái Răng</a></li>
+                                <li><a href="">Bến Ninh kiều</a></li>
+                                <li><a href="">Giàn Gừa</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="tintuc.html">Tin tức</a></li>
+                        <li> <a href="lienhe.html">Liên hệ</a></li>
+                        <li id="searchBar"><input type="text" placeholder="Tìm kiếm">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- banner  -->
+            <div class="banner">
+                <img src="https://static.vecteezy.com/system/resources/previews/017/518/791/non_2x/outline-can-tho-vietnam-city-skyline-with-blue-buildings-vector.jpg" alt="">
+                <div class="text">
+                  <span>Liên hệ</span>
+                  <p>Trang Chủ > Liên Hệ</p>
+                </div>
+            </div>
+            <div class="map">
+              <img src="https://baodongnai.com.vn/file/e7837c02876411cd0187645a2551379f/dataimages/202008/original/images2309856_t11_1.jpg" alt="">
+            </div>
+        </div>
+        
+        <!-- phần nội dung -->
+        <div class="content">
+          <div class="title">
+            <h1>Liên hệ với chúng tôi</h1>
+            <p>Chúng tôi cam kết sẽ phản hồi lại bạn trong thời gian sớm nhất có thể. Đội ngũ hỗ trợ của chúng tôi luôn sẵn sàng giúp đỡ bạn với mọi vấn đề liên quan đến dịch vụ của chúng tôi.</p>
+          </div>
+          <div class="row">
+            <div class="left">
+              <div class="info">
+                <img src="https://sgtek.com.vn/wp-content/uploads/2022/10/icon3.png" alt="icon" />
+
+                <div class="info-text">
+                  <strong>Địa chỉ</strong>
+                  <p>1073/23 Cách Mạng Tháng 8, P.7, Q.Tân Bình, TP.HCM</p>
+               </div>
+             </div>
+   
+                 <div class="info">
+                   <img src="https://sgtek.com.vn/wp-content/uploads/2022/10/icon1-1.png" alt="icon" />
+                 <div class="info-text">
+                   <strong>Số điện thoại</strong>
+                   <p>(+84) 0313-728-397<br>(+84) 0313-728-397</p>
+                 </div>
+               </div>
+   
+                 <div class="info">
+                   <img src="https://sgtek.com.vn/wp-content/uploads/2022/10/icon2.png" alt="icon" />
+                   <div class="info-text">
+                     <strong>Email</strong>
+                     <p><a href="mailto:info@themona.global">info@themona.global</a></p>
+                   </div>
+                 </div>
+               </div>
+   
+                 <div class="right">
+                   <form class="contact-form">
+                     <div class="form-row">
+                       <input type="text" placeholder="Họ tên*" required />
+                       <input type="email" placeholder="Email*" required />
+                     </div>
+                     <input type="text" placeholder="Chủ đề*" required />
+                     <textarea placeholder="Nội dung" rows="5" required></textarea>
+                     <button type="submit">Gửi liên hệ</button>
+                   </form>
+                 </div>
+               </div>
+             </div>
+   
+           <div class="subscribe-form">
+             <div class="left">
+               <p>Đăng ký ngay để nhận các ưu đãi đặc biệt, khuyến mãi hấp dẫn và các tin tức mới nhất về du lịch.</p>
+             </div>
+             
+             <button class="btn-subscribe">
+               Đăng ký ngay
+             </button>
+           </div>
+           <!-- phần dưới cùng -->
+           <div class="footer">
+               <div class="row-footer">
+                   <div class="col about-us">
+                       <p class="footer-title">Về chúng tôi</p>
+                       <p>Our Story</p>
+                       <p>travel blogs & Tips</p>
+                       <p>Working with us</p>
+                       <p>Be our partners</p>
+                   </div>
+                   <div class="col contact">
+                       <p class="footer-title">Thông tin liên hệ</p>
+                       <p>Toà nhà FPT Polytechnic,
+                           đường số 22, phường Thường Thạnh,
+                           quận Cái Răng, TP Cần Thơ-098 388 1100
+                       </p>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="support">
+       </div>
+       <script src="js/js.js"></script>
+       <script type="module" src="js/firebase.js"></script>
+   </body>
+   
+   </html>
