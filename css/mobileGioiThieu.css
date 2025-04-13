@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .lum .light div{
         background-color: rgba(128, 128, 128, 0.448);
         border-radius: 15px;
@@ -8,18 +8,144 @@
         font-size: 15px;
     }
     .lum .light{
-        padding-top: 35px;
+        padding-top: 40px;
         gap: 50px;
         display: grid;
         color: #000000;
+        justify-content: space-around;
     }
     .introduce-content{
         display: grid;
+        width: 80%;
+        font-size: 23px;
+        padding-top: 50px;
     }
     .introduce-content .row-1{
         display: grid;
+        gap: 10px;
     }
     .introduce-content .row-2{
         display: grid;
+        gap: 10px;
+    }
+    .introduce-content .col-1{ 
+        padding-bottom: 0px; 
+        flex: 1;
+        justify-items: center;
+        
+    }
+    .introduce-content .col-2{
+        flex: 1;
+        gap: 5px;
+        display: grid;
+        flex-direction: row;
+    }
+    .introduce-content .col-2 .cont-1{
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        background-color:  #EAEAEA;
+        border-radius: 25px;
+        padding: 15px;
+    }
+    .introduce-content .col-2 .cont-2{
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        background-color: #eaeaea;
+        border-radius: 25px;
+        padding: 15px;
+    }
+    /* phần khó */
+    .vanhoa .row-2{
+        flex: 11;
+        width: 300px;
+    }
+    .vanhoa .row-2 .content{
+        font-size: 80%;
+        width: 80%;
+    }
+    .vanhoa .row-1{
+        flex: 5;
+        transform: translateY(-5px) translateX(5px);
+    }
+    .vanhoa .background p{
+        font-size: 100%;
+        font-weight: bold;
+    }.vanhoa .half{
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+    }
+    .vanhoa .half .full{
+        width: 100%;
+        border-radius: 50%;
+        height: 200%;
+        position: relative;
+    }
+    /* phần khó*/
+    /* phần xanh */
+    .dacTrung{
+    }
+    .dacTrung .col-0{
+        background-color: rgb(114, 192, 220);
+        justify-items: center;
+        text-align: center;
+        width: 300px;
+        height: 100px;
+        display: flex;
+        border-radius: 100px;
+    }
+    .dacTrung .col-0 .col-1{
+        background-color: #D2D1F8;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10pt;
+    }
+    .dacTrung .col-0 .col-2{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: 0 auto;
+        font-size: 10pt;
+        width: 70%;
+        padding-right: 10px;
+    }
+    /* phần xanh */
+    .vol1>h2{
+        text-shadow: 0px 0px 5px white;
+        padding-left: 5px;
+    }
+    .volka .vol1{
+        /* background */
+        width: 500px;
+        height: 220px;
+        background-size: 100% 200px;
+        background-image: url('../img/phone.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        align-items: center;
+        /* text */
+        font-size: 13px;
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+    .volka .vol2{
+        margin: 10px;
+        width: 185px;
+        height: 35px;
+        display: flex;
+        background-color: silver;
+        justify-content: center;
+        border-radius: 5px;
+        color: black;
+        opacity: 1;
+        font-size: 7px;
+        align-items: center;
     }
 }

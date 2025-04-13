@@ -1,16 +1,20 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1500px) {
 .banner {
-  height: 250px;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin-top: 80px;
 }
 
 .banner img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  margin-top: 0;
 }
 
 .container {
-  height: auto;
+  height: 400px;
   padding: 10px;
 }
 .container iframe {
@@ -21,7 +25,7 @@
 .content {
   padding: 10px;
   max-width: 600px;
-   margin:  10px auto;/*-80px auto */
+  margin: -100px auto 10px auto; 
 }
 
 .title h1 {

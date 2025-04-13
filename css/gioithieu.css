@@ -8,13 +8,14 @@
 .app .banner .text{
     padding: 100px;
     background-repeat: no-repeat;
-    background-image: url("https://www.cantho.gov.vn/wps/wcm/connect/030dd79a-5320-4641-baeb-c67274c529dc/Picture1.jpg?MOD=AJPERES&CACHEID=030dd79a-5320-4641-baeb-c67274c529dc");
+    background-image: url("https://media.vneconomy.vn/images/upload/2023/05/13/dbscl-4604.jpg");
     background-size: 100% 250px;
     background-position: center;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
+    background-size: cover;
     text-shadow: 0px 0px 5px black;
 }
 .app .banner .text a{
@@ -32,13 +33,16 @@
     padding-top: 40px;
     text-align: center;
 }
-.video {
+
+.lum iframe {
     width: 100%;
     height: 100vh;
     pointer-events: none;
     object-fit: cover;
     display: block;
+    filter: brightness(0.8);
 }
+
 .lum h3{
     font-size: 30px;
 }
@@ -64,24 +68,20 @@
 }
 /*Đặc trưng */
 .dacTrung{
-    padding-left: 15%;
+    width: 90%;
+    margin: 0 auto;
 }
-.dacTrung .amThuc,
-.dacTrung .leHoi,
-.dacTrung .gianDi,
-.dacTrung .khamPha{
+.dacTrung .col-0{
     background-color: rgb(114, 192, 220);
     justify-items: center;
     text-align: center;
     width: 80%;
+    margin: 0 auto;
     display: flex;
     border-radius: 100px;
     margin-bottom: 30px;
 }
-.dacTrung .amThuc .col-1,
-.dacTrung .leHoi .col-1,
-.dacTrung .gianDi .col-1,
-.dacTrung .khamPha .col-1{
+.dacTrung .col-0 .col-1{
     background-color: #D2D1F8;
     border-radius: 50%;
     width: 200px;
@@ -91,77 +91,16 @@
     align-items: center;
     font-size: 15pt;
 }
-.dacTrung .amThuc .col-2,
-.dacTrung .leHoi .col-2,
-.dacTrung .gianDi .col-2,
-.dacTrung .khamPha .col-2{
+.dacTrung .col-0 .col-2{
     text-align: center;
-    font-size: 18px;
-    padding-top: 70px;
-    padding-right: 100px;
-    width: 80%;
-}
-
-/* đăng ký ver2 */
-.subscribe {
-    width: 100%;
-    background-color: rgb(175, 211, 226);
-    padding: 60px 20px;
-  }
-  
-  .subscribe .col {
     display: flex;
-    justify-content: space-between;
+    font-size: 18px;
+    width: 70%;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
-    flex-wrap: wrap;
-  }
-  .subscribe .col-1 {
-    flex: 1;
-  
-  }
-  
-  .subscribe .col-1 .text {
-    color: #fff;
-    font-size: 20pt;
-    line-height: 1.5;
-    font-weight: 500;
-  }
-  
-  .subscribe .col-2 {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-  }
-  
-  .subscribe .general .lopcha {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .subscribe .general .lopcha input[type="email"] {
-    padding: 12px 15px;
-    border: 1px solid rgb(87, 87, 87);
-    border-radius: 5px;
-    width: 300px;
-    font-size: 15px;
-    background-color: #fff;
-  }
-  .subscribe .general .lopcha .lopcon .sub-btn {
-    background-color: red;
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    font-size: 15px;
-    transition: background-color 0.3s;
-  }
-  
-  .subscribe .general .lopcha .lopcon .sub-btn:hover {
-    background-color: rgb(243, 45, 45);
-  }
+}
+
 
 /* phần ở dưới */
 .introduce-content{
@@ -170,7 +109,7 @@
     text-align: center;
     padding-bottom: 100px;
     padding-top: 100px;
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
 }
 .introduce-content .row-1{
@@ -245,7 +184,7 @@
     border-radius: 50px;
 }
 .vanhoa .row-2 .content{
-    font-size: 2rem;
+    font-size: 120%;
     width: 80%;
 }
 .vanhoa .half{
@@ -267,7 +206,7 @@
     left: 20%;
 }
 .vanhoa .background p{
-    font-size: 24px;
+
     font-weight: bold;
 }
 /* phone */
@@ -298,7 +237,6 @@
 }
 .volka .vol2{
     margin: 10px;
-
     width: 400px;
     height: 100px;
     display: flex;
