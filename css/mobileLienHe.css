@@ -1,0 +1,87 @@
+@media screen and (max-width: 600px) {
+.banner {
+  height: 250px;
+}
+
+.banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  height: auto;
+  padding: 10px;
+}
+.container iframe {
+  height: 400px;
+  width: 100%;
+}
+
+.content {
+  padding: 10px;
+  max-width: 600px;
+   margin:  10px auto;/*-80px auto */
+}
+
+.title h1 {
+  font-size: 20px;
+}
+.title p {
+  font-size: 13px;
+  padding-top: 15px;
+}
+
+.row {
+  gap: 10px;
+}
+
+.contact-container {
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.row .left .info {
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.row .left .info img {
+  width: 40px;
+  height: 40px;
+}
+
+.info-text strong {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.info-text p {
+  font-size: 10pt;
+}
+
+.info-text a {
+  font-size: 10pt;
+}
+
+.contact-form {
+  gap: 10px;
+}
+
+.form-row {
+  gap: 8px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 7px;
+  font-size: 12pt;
+}
+
+.contact-form button {
+  padding: 10px;
+  font-size: 12pt;
+  width: 120px;
+}
+
+
+}

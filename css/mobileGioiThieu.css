@@ -1,0 +1,25 @@
+@media screen and (max-width: 600px) {
+    .lum .light div{
+        background-color: rgba(128, 128, 128, 0.448);
+        border-radius: 15px;
+        width: 530px;
+        height: 100%;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .lum .light{
+        padding-top: 35px;
+        gap: 50px;
+        display: grid;
+        color: #000000;
+    }
+    .introduce-content{
+        display: grid;
+    }
+    .introduce-content .row-1{
+        display: grid;
+    }
+    .introduce-content .row-2{
+        display: grid;
+    }
+}

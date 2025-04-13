@@ -16,26 +16,26 @@
         <!-- phần đầu  -->
         <div class="header">
             <div class="mobile-menu-contain">
-                <nav id="mobile-menu" class="menu hidden">
-                    <div class="mobile-menu-icon" onclick="toggleMenu();">☰</div>
+              <nav id="mobile-menu" class="menu hidden">
+                <div class="mobile-menu-icon" onclick="toggleMenu();">☰</div>
+                <ul>
+                    <img src="img/logo.png" alt="logo" >
+                  <li><a href="index.html">Trang chủ</a></li>
+                  <li><a href="gioithieu.html">Giới thiệu</a></li>
+                  <li><a href="">Địa danh</a>
                     <ul>
-                        <img src="img/logo.png" alt="">
-                        <li><a href="index.html">Trang chủ</a></li>
-                        <li><a href="gioithieu.html">Giới thiệu</a></li>
-                        <li> <a>Địa danh</a>
-                            <ul>
-                                <li><a href="">Chùa Phật Học</a></li>
-                                <li><a href="">Chợ nổi Cái Răng</a></li>
-                                <li><a href="">Bến Ninh kiều</a></li>
-                                <li><a href="">Giàn Gừa</a></li>
-                            </ul>
-                        </li>
-                        <li> <a href="tintuc.html">Tin tức</a></li>
-                        <li> <a href="lienhe.html">Liên hệ</a></li>
-                        <li id="searchBar"><input type="text" placeholder="Tìm kiếm">
-                        </li>
+                      <li><a href="trangchitiet/chonoicairang.html">Chùa Phật Học</a></li>
+                      <li><a href="trangchitiet/chonoicairang.html">Chợ nổi Cái Răng</a></li>
+                      <li><a href="trangchitiet/benninhkieu.html">Bến Ninh kiều</a></li>
+                      <li><a href="trangchitiet/gianthua.html">Giàn Gừa</a></li>
                     </ul>
-                </nav>
+                  </li>
+                  <li> <a href="tintuc.html">Tin tức</a></li>
+                  <li> <a href="lienhe.html">Liên hệ</a></li>
+                  <li id="searchBar"><input type="text" placeholder="Tìm kiếm">
+                  </li>
+                </ul>
+              </nav>
             </div>
             <!-- banner  -->
             <div class="banner">
@@ -48,14 +48,14 @@
                 <h3>Trải nghiệm du lịch độc đáo và kỷ niệm khó quên!</h3>
                 <div class="overview-content">
                     <div class="text">
-                        <p>Chúng tôi tự hào giới thiệu với bạn một trải nghiệm du lịch tuyệt vời, nơi bạn có thể khám
+                        <p class="text1">Chúng tôi tự hào giới thiệu với bạn một trải nghiệm du lịch tuyệt vời, nơi bạn có thể khám
                             phá những điểm đến độc đáo, trải nghiệm văn hóa đa dạng và tận hưởng cảnh quan thiên nhiên!
                         </p>
-                        <div>
+                        <p class="text2">
                             - Trải nghiệm du lịch độc đáo <br>
                             - Hướng dẫn chuyên nghiệp <br>
                             - Dịch vụ chất lượng cao <br>
-                        </div>
+                        </p>                                                   
                     </div>
                     <div class="pic">
                         <img src="img/cantho.jpg" alt="">
@@ -111,7 +111,7 @@
                         <p>Địa chỉ: 34 Hoà Bình, Tân An, Ninh Kiều, Cần Thơ.</p>
                     </div>
                     <div class="btn-wrapper">
-                        <a href="#" class="btn-explore">Khám phá</a>
+                        <a href="trangchitiet/chuaphathoc.html" class="btn-explore">Khám phá</a>
                     </div>
                 </div>
 
@@ -136,7 +136,7 @@
                         <p>Địa chỉ: 46 Hai Bà Trưng, Tân An, Ninh Kiều, Cần Thơ</p>
                     </div>
                     <div class="btn-wrapper">
-                        <a href="#" class="btn-explore">Khám phá</a>
+                        <a href="trangchitiet/chonoicairang.html" class="btn-explore">Khám phá</a>
                     </div>
                 </div>
 
@@ -162,7 +162,7 @@
                         <p>Địa chỉ: Đường Hai Bà Trưng, phường Tân An, quận Ninh Kiều, thành phố Cần Thơ.</p>
                     </div>
                     <div class="btn-wrapper">
-                        <a href="#" class="btn-explore">Khám phá</a>
+                        <a href="trangchitiet/benninhkieu.html" class="btn-explore">Khám phá</a>
                     </div>
                 </div>
 
@@ -188,7 +188,7 @@
                         <p>Địa chỉ: ấp Nhơn Khánh, xã Nhơn Nghĩa, huyện Phong Điền, thành phố Cần Thơ</p>
                     </div>
                     <div class="btn-wrapper">
-                        <a href="#" class="btn-explore">Khám phá</a>
+                        <a href="trangchitiet/gianthua.html" class="btn-explore">Khám phá</a>
                     </div>
                 </div>
 
@@ -274,37 +274,50 @@
             </div>
             <!-- phần dưới cùng -->
             <div class="footer">
-                <h1>Danh sách bài viết</h1>
-                <div id="postList"></div>
                 <div class="row-footer">
-                    <div class="col about-us">
-                        <p class="footer-title">Về chúng tôi</p>
-                        <p>Our Story</p>
-                        <p>travel blogs & Tips</p>
-                        <p>Working with us</p>
-                        <p>Be our partners</p>
-                    </div>
-                    <div class="col contact">
-                        <p class="footer-title">Thông tin liên hệ</p>
-                        <p>Toà nhà FPT Polytechnic,
-                            đường số 22, phường Thường Thạnh,
-                            quận Cái Răng, TP Cần Thơ-098 388 1100
-                        </p>
-                    </div>
+                  <div class="col about-us">
+                    <p class="footer-title">Giới thiệu</p>
+                    <p>Về Chúng Tôi</p>
+                    <p>Về Chúng Tôi</p>
+                    <p>Điểm đến nổi bật</p>
+                    <p>Ẩm thực Cần Thơ</p>
+                    <p>Lễ hội & Văn hóa</p>
+                    <p>Cẩm nang du lịch</p>
+                  </div>
+                  <div class="col contact">
+                    <p class="footer-title">Điều khoản</p>
+                    <p>Điều khoản sử dụng</p>
+                    <p>Chính sách bảo mật thông tin</p>
+                    <p>Hướng dẫn xuất hóa đơn GTGT</p>
+                  </div>
+                  <div class="col contact">
+                    <p class="footer-title">Điện thoại: (024) 7300 1955</p>
+                    <p class="footer-title">Liên hệ</p>
+                    <p>Toà nhà FPT Polytechnic, Đ. Số 22, Thường Thạnh, Cái Răng, Cần Thơ</p>
+                  </div>
+                  <div class="col contact">
+                    <p class="footer-title">fanage</p>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCDFPTCT&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=825229549017537" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                  </div>
                 </div>
-            </div>
+                <hr>
+                <div class="bottom-footer">
+                  <div class="content-footer">
+                  <p>Trường Cao đẳng FPT Polytechnic Cần Thơ</p>
+                  <p> Người đại diện: VŨ CHÍ THÀNH – Giám đốc khối giáo dục Cao đẳng FPT Polytechnic
+                    <p>Mã số cơ sở giáo dục: 0107414525 do Sở Kế hoạch và Đầu tư TP. Hà Nội cấp ngày 13/07/2015</p>
+                  </p>
+                  <p>       Toà nhà FPT Polytechnic, Đ. Số 22, Thường Thạnh, Cái Răng, Cần Thơ   Email: caodang@fpt.edu.vn</p>
+                  <p>
+                    © 2015–2025 Trường Cao đẳng FPT Polytechnic – Mọi quyền được bảo lưu</p>
+                </div>
+              </div>
+              </div>
         </div>
         <div class="support">
         </div>
         <script src="js/js.js"></script>
-        <script type="module" src="js/firebase.js"></script>
-        <script>
-            document.querySelector('.pic1').addEventListener('mouseenter', function () {
-                document.querySelector('#diem-den').scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        </script>        
+        <script type="module" src="js/firebase.js"></script>    
 </body>
 
 </html>

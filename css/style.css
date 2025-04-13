@@ -1,11 +1,11 @@
 
 /* mobile hidden */
 .mobile-menu-icon{
-    font-size: 20px;
+    font-size: 30px;
+    margin-top: 20px;
     display: none;
-
+    margin-left: 20px;
 }
-
 /* Menu */
 
 .menu input[type=text]{
@@ -43,8 +43,6 @@
     opacity: 1;
     object-fit: contain;
 }
-
-
 .menu>ul {
     width: 100%;
     position: relative;
@@ -150,29 +148,23 @@
     align-items: center;
 }
 
-.overview-content .text {
-    text-align: center;
-}
 
-.overview .overview-content .text p {
+.overview .overview-content .text .text1 {
     color: #3e3e3e;
     font-size: 22px;
     text-align: justify;
     text-indent: 50px;
-
 }
-.overview .overview-content .text div{
+.overview .overview-content .text .text2{
     font-size: 22px;
     font-weight: bold;
     line-height: 2rem;
     margin-top: 20px;
-
 }
 
 .overview-content .text {
     width: 100%;
-    padding: 0%;
-
+    padding-left: 120px;
 }
 
 .overview-content img {
@@ -507,15 +499,14 @@
 }
 
 .row-footer {
+    padding-top: 30px;
     display: flex;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
+    justify-content: center;
 }
 
 .col p {
     color: #919191;
-    font-weight: bold;
 }
 
 .footer-title {
@@ -530,12 +521,28 @@
 .contact {
     width: 350px;
 }
-
+.contact p{
+    line-height: 3cap;
+}
+.about-us p{
+    line-height: 3cap;
+}
+.bottom-footer{
+    padding-top: 30px;
+    color: #919191;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.content-footer{    
+    line-height: 2cap;
+}
+/* footer dừng ở đây  */
 .rating {
     justify-items: center;
     text-align: center;
 }
-
 .rating .title {
     background-color: #A9D8EA;
     color: white;
@@ -674,6 +681,7 @@
     padding-bottom: 50px;
     font-size: 30px;
 }
+
 .support{
     
 }
@@ -682,3 +690,4 @@ html {
     scroll-behavior: smooth;
     overflow-y: auto;
 }
+

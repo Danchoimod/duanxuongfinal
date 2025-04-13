@@ -1,18 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
 .banner {
     width: 100%;
     height: 250px;
     position: relative;
     overflow: hidden;
-  }
-  
-  .banner img {
+}
+
+.banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-  }
-  
-  .overlay-text {
+}
+
+.overlay-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,268 +30,250 @@
     z-index: 2;
     padding: 0 10px;
     line-height: 1.4;
-  }
-  
-  .title {
+}
+.overlay-text p a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.title {
     font-size: 42px;
     font-weight: bold;
     margin: 0;
-  }
-  
-  .breadcrumb {
+}
+
+.breadcrumb {
     font-size: 18px;
     margin-top: 8px;
     color: white;
-  }
-  
-  .banner::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.35);
-    z-index: 1;
-  }
-  
-  .content-section {
+}
+
+/* BỐ CỤC */
+.content-section,
+.main-layout {
     display: flex;
-    justify-content: space-between;
     gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .left-column {
+    margin-top: 20px;
+}
+
+.left-column {
     flex: 2;
-    max-width: 65%;
-  }
-  
-  .image-wrapper {
-    width: 80%;
-    height: 200px;
-    border-radius: 30px;
-    overflow: hidden;
-    margin: 0 auto;
-  }
-  
-  .image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 30px;
-  }
-  
-  .caption {
-    text-align: center;
-    font-weight: bold;
-    margin-top: 8px;
-  }
-  
-  .right-column {
+
+}
+
+.right-column {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-  
-  .search-box input {
-    width: 220px;
-    margin: 10px auto;
+}
+
+/* HÌNH GIỚI THIỆU */
+.image-card {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.image-card img {
+    width: 80%;
+    height: 280px;
+    object-fit: cover;
     display: block;
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 14px;
-  }
-  
-  .category-box {
-    width: 220px;
-    padding: 15px;
     margin: 0 auto;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 12px;
+}
+
+.caption {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* TÌM KIẾM */
+.search-box {
+    width: 65%;
+    margin: 0 auto 15px auto; 
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    border: 1px solid #000;
+}
+
+/* CHUYÊN MỤC */
+.category-box {
     background-color: #fff;
-    font-size: 14px;
-  }
-  
-  .category-box h3 {
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    border: 1px solid #000;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.category-box h3 {
     font-size: 18px;
-    margin-bottom: 10px;
+    border-left: 5px solid red;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.category-list {
+    list-style: none;
+}
+
+.category-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.category-list li:last-child {
+    border-bottom: none;
+}
+
+.category-list .count {
+    color: #777;
+    font-size: 14px;
+}
+/* BÀI VIẾT MỚI NHẤT */
+.latest-posts {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    border: 1px solid #000;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.latest-posts h3 {
+    font-size: 18px;
+    border-left: 5px solid red;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.latest-post-item {
     display: flex;
     align-items: center;
-    font-weight: bold;
-  }
-  
-  .highlight-line {
-    width: 4px;
-    height: 20px;
-    background-color: red;
-    display: inline-block;
-    margin-right: 8px;
-    border-radius: 2px;
-  }
-  
-  .categories {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .categories li {
-    margin: 8px 0;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.latest-post-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.latest-post-item p {
     font-size: 15px;
-  }
-  
-  .content {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .main-layout {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .left-column {
-    flex: 1 1 60%;
-  }
-  
-  .right-column {
-    flex: 1 1 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .post {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+}
+
+.latest-post-item small {
+    font-size: 13px;
+    color: #777;
+}
+
+
+.explore-box {
+    background-color: #d6efff;
     padding: 15px;
-    margin-bottom: 20px;
-  }
-  
-  .post img {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid #000; 
+}
+
+.explore-box h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #0a4d78;
+}
+
+.explore-row {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.explore-item {
+    flex: 1;
+}
+
+.explore-item img {
     width: 100%;
     height: auto;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 6px;
-  }
-  
-  .post h4 {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #333;
-  }
-  
-  .post p {
-    color: #666;
-  }
-  
-  .latest-posts {
-    width: 220px;
-    padding: 15px;
-    margin: 0 auto;
-    border: 1px solid #ddd;
     border-radius: 10px;
-    background-color: #fff;
-    font-size: 14px;
-    box-sizing: border-box;
-  }
-  
-  .latest-posts h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
+    transition: transform 0.3s ease;
+   
+}
+
+.explore-item img:hover {
+    transform: scale(1.05);
+}
+
+.explore-item p {
+    margin-top: 8px;
+    background-color: white;
     font-weight: bold;
-  }
-  
-  .latest-posts h3 .highlight-line {
-    width: 4px;
-    height: 20px;
-    background-color: red;
-    display: inline-block;
-    margin-right: 8px;
-    border-radius: 2px;
-  }
-  
-  .latest-posts .highlight-line {
-    width: 4px;
-    height: 20px;
-    background-color: red;
-    display: inline-block;
-    margin-right: 8px;
-    border-radius: 2px;
-  }
-  
-  .latest-posts ul {
-    list-style: none;
+    color: #0a4d78;
+    padding: 6px 0;
+    border-radius: 8px;
+}
+
+/* BÀI VIẾT TRONG MAIN */
+.post {
+    background-color: transparent;
+    border-radius: 0;
     padding: 0;
-    margin: 0;
-  }
-  
-  .latest-posts li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-    font-size: 14px;
-  }
-  
-  .latest-posts li img {
-    width: 40px;
-    height: 40px;
+    box-shadow: none;
+    margin-bottom: 20px;
+}
+
+.post img {
+    width: 80%;
+    height: 450px;
     object-fit: cover;
-    border-radius: 4px;
-    margin-right: 10px;
-    flex-shrink: 0;
-  }
-  
-  .latest-posts li:hover {
-    background-color: #f0f0f0;
-    cursor: pointer;
-  }
-  
-  .event-highlight img {
-    width: 100%;
-    border-radius: 6px;
-    max-height: 200px;
-    object-fit: cover;
-  }
-  
-  .explore {
-    background-color: #d3edf8;
-    border-radius: 8px;
-    padding: 10px;
-  }
-  
-  .explore-options {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .explore-options div {
-    flex: 1;
-    text-align: center;
-  }
-  
-  .explore-options img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
+    border-radius: 12px;
     display: block;
-  }
-  
-  .explore-options p {
-    font-weight: bold;
-    margin-top: 10px;
+    margin: 0 auto 10px auto;
+}
+
+.post h4 {
+    font-size: 18px;
+    margin-bottom: 6px;  
+    color: #0a4d78;
+    text-align: center;
+ 
+}
+
+.post p {
     font-size: 15px;
-  }
-  
+    color: #555;
+    text-align: center; 
+}
+
+.category-box h3,
+.latest-posts h3 {
+    font-size: 18px;
+    border-left: 5px solid red;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;          
+    border-bottom: 1px solid #333; 
+}
+
+

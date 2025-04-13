@@ -18,3 +18,123 @@ html,body {
     width: 100%;
     overflow: hidden;
 }
+.subscribe {
+    width: 100%;
+    background-color: rgb(175, 211, 226);
+  }
+  
+  .subscribe .col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .subscribe .col-1 {
+    flex: 1;
+  
+  }
+  
+  .subscribe .col-1 .text {
+    color: #fff;
+    font-size: 20pt;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  
+  .subscribe .col-2 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .subscribe .general .lopcha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .subscribe .general .lopcha input[type="email"] {
+    padding: 12px 15px;
+    border: 1px solid rgb(87, 87, 87);
+    border-radius: 5px;
+    width: 300px;
+    font-size: 15px;
+    background-color: #fff;
+  }
+  .subscribe .general .lopcha .lopcon .sub-btn {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .subscribe .general .lopcha .lopcon .sub-btn:hover {
+    background-color: rgb(243, 45, 45);
+  }
+/* VUi lòng không sửa */
+@media screen and (max-width: 600px) {
+    .footer p{
+        font-size: 10px;
+    }
+    .row-footer {
+        padding-top: 30px;
+        display: flex;
+        padding-bottom: 0px;
+        justify-content: center;
+    }
+        /* footer */
+    .footer{
+        justify-items: center;
+        padding-left: 20px;
+    }
+    .row-footer {
+        display: flex;
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-bottom: 150px;
+    }
+    .footer-title {
+        font-size: 19px;
+        color: white !important;
+    }
+    .col p {
+        color: #919191;
+        font-weight: normal;
+    }
+    .contact, .about-us{
+        width: 150px;
+    }    /* footer */
+    .footer{
+        justify-items: center;
+    }
+    .row-footer {
+        display: flex;
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+    .footer-title {
+        font-size: 19px;
+        color: white !important;
+    }
+    .col p {
+        color: #919191;
+        font-weight: normal;
+    }
+    .contact, .about-us{
+        width: 150px;
+    }
+    .subscribe {
+        padding: 30px 0px;
+      }
+      .subscribe .col .col-1 .text {
+        font-size: 15pt;
+        padding: 10px;
+      }
+    
+}

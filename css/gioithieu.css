@@ -2,128 +2,311 @@
     padding: 0px;
     margin: 0px;
 }
-.app .banner img{
-    margin-top: 80px;
-    width: 100%;
-    height: 200px;
-    box-shadow: 0px 0px 5px gray;
+.banner{
+    padding-top: 75px;
 }
-
-
-.content{
+.app .banner .text{
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-image: url("https://www.cantho.gov.vn/wps/wcm/connect/030dd79a-5320-4641-baeb-c67274c529dc/Picture1.jpg?MOD=AJPERES&CACHEID=030dd79a-5320-4641-baeb-c67274c529dc");
+    background-size: 100% 250px;
+    background-position: center;
     justify-content: center;
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14pt;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
 }
-.content .traiNghiem{
-    display: flex;
+.app .banner .text a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+.app .banner .text a:hover{
+    text-decoration: underline;
+}
+/* content */
+.lum{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: center;
+}
+.video {
     width: 100%;
-    margin-top: 70px;
+    height: 100vh;
+    pointer-events: none;
+    object-fit: cover;
+    display: block;
 }
-.traiNghiem .text{
-    float: left;
-    width: 50%;
-    padding-left: 5%;
+.lum h3{
+    font-size: 30px;
 }
-.traiNghiem .anh{
+.lum .light{
+    padding-top: 35px;
+    gap: 50px;
     display: flex;
-    width: 50%;
-    padding-left: 10%;
+    color: #000000;
+}
+.lum .light div{
+    background-color: rgba(128, 128, 128, 0.448);
+    border-radius: 15px;
+    width: 530px;
+    height: 225px;
+    padding: 10px;
+}
+.lum .light span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.lum .light p{
+    padding-top: 10px;
+}
+/*Đặc trưng */
+.dacTrung{
+    padding-left: 15%;
+}
+.dacTrung .amThuc,
+.dacTrung .leHoi,
+.dacTrung .gianDi,
+.dacTrung .khamPha{
+    background-color: rgb(114, 192, 220);
+    justify-items: center;
+    text-align: center;
+    width: 80%;
+    display: flex;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+.dacTrung .amThuc .col-1,
+.dacTrung .leHoi .col-1,
+.dacTrung .gianDi .col-1,
+.dacTrung .khamPha .col-1{
+    background-color: #D2D1F8;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15pt;
+}
+.dacTrung .amThuc .col-2,
+.dacTrung .leHoi .col-2,
+.dacTrung .gianDi .col-2,
+.dacTrung .khamPha .col-2{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 70px;
+    padding-right: 100px;
+    width: 80%;
+}
+
+/* đăng ký ver2 */
+.subscribe {
+    width: 100%;
+    background-color: rgb(175, 211, 226);
+    padding: 60px 20px;
+  }
+  
+  .subscribe .col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .subscribe .col-1 {
+    flex: 1;
+  
+  }
+  
+  .subscribe .col-1 .text {
+    color: #fff;
+    font-size: 20pt;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  
+  .subscribe .col-2 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .subscribe .general .lopcha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .subscribe .general .lopcha input[type="email"] {
+    padding: 12px 15px;
+    border: 1px solid rgb(87, 87, 87);
+    border-radius: 5px;
+    width: 300px;
+    font-size: 15px;
+    background-color: #fff;
+  }
+  .subscribe .general .lopcha .lopcon .sub-btn {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .subscribe .general .lopcha .lopcon .sub-btn:hover {
+    background-color: rgb(243, 45, 45);
+  }
+
+/* phần ở dưới */
+.introduce-content{
+    display: flex;
+    gap: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    width: 75%;
+    margin: 0 auto;
+}
+.introduce-content .row-1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.introduce-content .row-2{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.introduce-content .col-1{ 
+    padding-bottom: 30px; 
+    flex: 1;
+    justify-items: center;
     
 }
-.traiNghiem .anh p{
-    text-align: left;
-    margin-top: 80px;
-}
-.traiNghiem .anh img{
-    width: 220px;
-    height: 250px;
-    border-radius: 50px;
-}
-
-/* Cam kết của chúng tôi */
-.cali .camKet{
-    margin-top: 70px;
-    text-align: center;
-}
-.banCamKet{
-    width: 100%;
-    margin-top: 70px;
-    text-align: center;
-    justify-content: center;
-    gap: 80px;
-    margin-bottom: 20px;
+.introduce-content .col-2{
+    flex: 1;
+    gap: 100px;
     display: flex;
+    flex-direction: row;
 }
-.cali .banCamKet h4{
-    margin: 10px;
+/* 2 thành phần con */
+/* về hình dáng của nó */
+.introduce-content .col-2 .cont-1{
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    background-color:  #EAEAEA;
+    border-radius: 50px;
+    padding: 50px;
 }
-.cali .banCamKet div{
-    border-radius: 15px;
-    background-color: rgb(237, 233, 233);
-    width: 230px;
-    height: 120px;
+.introduce-content .col-2 .cont-2{
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: #eaeaea;
+    border-radius: 20px;
+    padding: 50px;
 }
-/* Dịch vụ nổi bậtt */
-.damMay{
-    position: relative;
-    margin-top: 62px;
-    background-color: #A9D8EA;
-    font-weight: bold;
-    width: 100vw;
-    height: 200px;
+/* nút đặc trưng lớn */
+.vanhoa{
+    padding: 30px;
+    height: 300px;
     justify-items: center;
 }
-.damMay h1{
-    color: white;
-    text-align: right;
-    padding-top: 70px;
-    padding-left: 275px;
+.vanhoa .background{
+    width: 90%;
+    height: 100%;
+    display: flex;
 }
-.damMay .hinhdammay{
-    bottom: 50px;
-    left: 0px;
+.vanhoa .row-1{
+    flex: 1;
+    transform: translateY(-50px) translateX(50px);
+    background-color: #C7C4F0;
+    border-radius: 50%;
+    position: relative;
+}
+.vanhoa .row-1 .text-inside{
     position: absolute;
+    bottom: 35%;
+    left: 20%;
 }
+.vanhoa .row-2{
+    flex: 5;
+    align-content: center;
+    justify-items: center;
+    background-color: #B2E0EF;
+    border-radius: 50px;
+}
+.vanhoa .row-2 .content{
+    font-size: 2rem;
+    width: 80%;
+}
+.vanhoa .half{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
 
-/*Đánh giá của khách hàng*/
-.danhGia{
-    margin-top: 70px;
-    text-align: center;
+}
+.vanhoa .half .full{
+    width: 100%;
+    border-radius: 50%;
+    height: 200%;
+    position: relative;
+    background-color: #D2D1F8;
+}
+.vanhoa .half .full .text-inside-2{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+.vanhoa .background p{
+    font-size: 24px;
+    font-weight: bold;
+}
+/* phone */
+.volka{
     justify-content: center;
+    display: flex;
+}
+.volka .vol1{
+    /* background */
+    width: 1000px;
+    height: 650px;
+    background-size: 100% 600px;
+    background-image: url('../img/phone.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    /* text */
+    font-size: 30px;
+    padding-top: 80px;
+    padding-left: 50px;
+}
+.vol1>h2{
+    text-shadow: 0px 0px 5px white;
+}
+.volka .vol2 img{
+    width: 20%;
+    vertical-align: middle;
+}
+.volka .vol2{
+    margin: 10px;
+
+    width: 400px;
+    height: 100px;
+    display: flex;
+    background-color: silver;
+    justify-content: center;
+    border-radius: 15px;
+    color: black;
+    opacity: 1;
+    font-size: 20px;
     align-items: center;
 }
-.danhGia .comment{
-    margin-top: 40px;
-    display: flex;
-    width: 100%;
-    text-align: left;
-}
-.danhGia .comment .cm{
-    width: 25%;
-    min-height: 200px;
-    background-color: whitesmoke;
-    margin: 0px 5%;
-
-}
-.danhGia .comment .cm p{
-    font-size: 13pt;
-    margin: 15px;
- 
-}
-.danhGia .comment .cm .avatar{
-    display: flex;
-    margin: 0px 15px;
-} 
-.danhGia .comment .cm .avatar img{
-    margin: 50px 20px;
-    width: 50px;
-    height: 50px;
-}
-.danhGia .comment .cm .avatar p{
-    margin: 50px 20px;
-}
-/*Đăng ký Email*/

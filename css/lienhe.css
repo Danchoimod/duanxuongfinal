@@ -1,52 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
     background-color: rgb(230, 227, 227);
     font-family: Arial, sans-serif;
 }
+.app {
+  width: 100%;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.banner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
 
 .banner img{
-    position: relative;
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
+    display: block;
 }
-.banner .text span{
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-weight: bold;
-    font-size: 40px;
-    
+ 
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 600px; 
+  z-index: 0;
+  overflow: hidden;
+  padding-top: 10px;
 }
-
-.banner .text p{
-    position: absolute;
-    top: 13%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
+.container iframe {
+  width: 100%;
+  height: 500px;
+  pointer-events: auto;
 }
-
-.map{
-    width: 100%;
-    height: 400px;
-    margin-top: 20px;
-}
-.map img{
-    width: 100%;
-    height: 400px;
-}
-
 
 .content{
-    width: 98%;
+    position: relative;
     max-width: 1200px;
     background-color: #fff;
-    margin: 0 auto;
-    padding: 20px;
+    margin: -200px auto 10px auto;
+    padding: 100px;
+    z-index: 1;
 }
 
 .title h1 {
@@ -71,10 +76,8 @@ body {
   flex-wrap: wrap;
   align-items: flex-start;
   max-width: 1200px;
-  
   gap: 20px;
 }
-
 
 .contact-container {
   display: flex;
@@ -83,19 +86,18 @@ body {
   margin-top: 40px;
 }
 
-.left {
-  flex: 1;
+.row .left {
   min-width: 280px;
 }
 
-.info {
+.row .left .info {
   display: flex;
   align-items: flex-start;
   gap: 15px;
   margin-bottom: 25px;
 }
 
-.info img {
+.row .left .info img {
   width: 50px;
   height: 50px;
 }
@@ -159,46 +161,4 @@ body {
 }
 
 
-.subscribe-form {
-  background-color: rgb(128, 197, 229);
-  width: 100%;
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 10px ;
-  justify-content: center;
-  align-items: center;
-  
-}
-.subscribe-form .left {
-  width: 100%;
-  
-}
-.subscribe-form .left p {
-  width: 100%;
-  font-size: 25px;
-  font-weight: bold;
-  margin: 20px 0;
-  padding-left: 60px;
-  color: white;
-  text-align: center;
-}
 
-.right {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.right .btn-subscribe {
-background-color: red;
-  color: white;
-  border: none;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 18px;
-  cursor: pointer;
-  width: 150px;
-}
-.right .btn-subscribe:hover {
-  background-color: rgb(226, 79, 79);
-}

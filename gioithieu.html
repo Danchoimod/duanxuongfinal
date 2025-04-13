@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/gioithieu.css">
+    <link rel="stylesheet" href="css/mobileGioiThieu.css">
 </head>
 
 <body>
@@ -20,140 +21,199 @@
                 <nav id="mobile-menu" class="menu hidden">
                     <div class="mobile-menu-icon" onclick="toggleMenu();">☰</div>
                     <ul>
-                        <img src="img/logo.png" alt="">
-                        <li><a href="index.html">Trang chủ</a></li>
-                        <li><a href="gioithieu.html">Giới thiệu</a></li>
-                        <li><a href="">Địa danh</a>
-                            <ul>
-                                <li><a href="">Chùa Phật Học</a></li>
-                                <li><a href="">Chợ nổi Cái Răng</a></li>
-                                <li><a href="">Bến Ninh kiều</a></li>
-                                <li><a href="">Giàn Gừa</a></li>
-                            </ul>
-                        </li>
-                        <li> <a href="tintuc.html">Tin tức</a></li>
-                        <li> <a href="lienhe.html">Liên hệ</a></li>
-                        <li id="searchBar"><input type="text" placeholder="Tìm kiếm">
-                        </li>
+                        <img src="img/logo.png" alt="logo" >
+                      <li><a href="index.html">Trang chủ</a></li>
+                      <li><a href="gioithieu.html">Giới thiệu</a></li>
+                      <li><a href="">Địa danh</a>
+                        <ul>
+                          <li><a href="trangchitiet/chonoicairang.html">Chùa Phật Học</a></li>
+                          <li><a href="trangchitiet/chonoicairang.html">Chợ nổi Cái Răng</a></li>
+                          <li><a href="trangchitiet/benninhkieu.html">Bến Ninh kiều</a></li>
+                          <li><a href="trangchitiet/gianthua.html">Giàn Gừa</a></li>
+                        </ul>
+                      </li>
+                      <li> <a href="tintuc.html">Tin tức</a></li>
+                      <li> <a href="lienhe.html">Liên hệ</a></li>
+                      <li id="searchBar"><input type="text" placeholder="Tìm kiếm">
+                      </li>
                     </ul>
-                </nav>
+                  </nav>
             </div>
             <!-- banner  -->
             <div class="banner">
-                <img src="https://media.mia.vn/uploads/blog-du-lich/bam-may-lien-tuc-voi-nhung-dia-diem-chup-hinh-dep-can-tho-1650301511.jpg"
-                    alt="">
+                <div class="text">
+                    <h1>Giới thiệu</h1>
+                    <p><a href="index.html">Trang Chủ</a> > <a href="#">Giới thiệu</a></p>
+                </div>
             </div>
         </div>
-        <!-- phần nội dung -->
+
         <div class="content">
-            <div class="traiNghiem">
-                <div class="text">
-                    <h4>TRẢI NGHIỆM DU LỊCH ĐỘC ĐÁO VÀ KỶ NIỆM KHÓ QUÊN.</h4> <br>
-                    <p>Chúng tôi tụ hào giới thiệu với bạn một trãi nghiệm du lịch tuyệt vời, nơi bạn có thể khám phá
-                        những điểm đến độc đáo,
-                        trải nghiệm văn hóa đa dạng và tận hưởng cảnh quan thiên nhiên tuyệt đẹp. <br> <br>
-                        Với sự tận tâm và chuyên nghiệp, chúng tôi cam kết mang đến cho bạn những kỷ niệm vô giá và độc
-                        đáo trên mỗi hành trình.
-                    </p>
-                </div>
-                <div class="anh">
-                    <p>Hướng dẫn chuyên nghiệp. <br> <br>Dịch vụ chất lượng.</p>
-                    <img src="https://toplist.vn/images/800px/cau-can-tho-11972.jpg" alt="">
-                </div>
-            </div>
-            <div class="cali">
-                <div class="camKet">
-                    <h3>Cam Kết Của Chúng Tôi</h3>
-                    <br>
-                    <p>ĐẢM BẢO TRẢI NGHIỆM DU LỊCH TỐT NHẤT CHO BẠN</p>
-                    <br>
-                    <p>Chúng tôi cam kết cung cấp cho bạn trải nghiệm du lịch tuyệt vời và đáng nhớ, từ việc đặt vé đến
-                        khám phá điểm đến. Với những cam kết của chúng tôi, bạn có thể yên tâm rằng chúng tôi sẽ luôn
-                        đồng hành và đảm bảo sự hài lòng của bạn.</p>
-                </div>
-                <div class="banCamKet">
+            <div class="lum">
+                <video class="video" autoplay muted loop playsinline controls>
+                    <source src="https://my-video-ltqeuloe6-xiaos-projects-af5e8162.vercel.app/POPY.mp4" type="video/mp4">
+                </video>
+                <h3>Lịch Sử Hình Thành & Ý Tưởng Sáng Lập</h3>
+                <div class="light">
                     <div>
-                        <h4>Giá tốt nhất</h4>
-                        <p>Chúng tôi cam kết mang đến cho bán giá cả cạnh tranh và ưu đãi đặc biệt</p>
+                        <span>Nguồn Cảm Hứng</span>
+                        <p>Du lịch Cần Thơ không chỉ là hành trình khám phá những thắng cảnh thiên nhiên và di tích lịch sử, mà còn là câu chuyện về những con người giản dị, thân thiện và lòng hiếu khách. Ý tưởng xây dựng website bắt nguồn từ niềm đam mê bất tận với vẻ đẹp của mảnh đất miền Tây, nơi mà mỗi ngả đường, mỗi con sông đều chứa đựng những câu chuyện độc đáo.</p>
                     </div>
                     <div>
-                        <h4>Đa dạng điểm đến</h4>
-                        <p>Chúng tôi cung cấp một loạt các điểm đến hấp dẫn trên toàn thế giới</p>
-                    </div>
-                    <div>
-                        <h4>Dịch vụ chất lượng</h4>
-                        <p>Chúng tôi cam kết hợp tác với các đối tác uy tín để đảm bảo chất lượng</p>
+                        <span>Quá Trình Phát Triển</span>
+                        <p>Từ những ý tưởng ban đầu, dự án đã trải qua nhiều giai đoạn: <br> Khởi đầu: Các chuyến đi thực tế, khảo sát địa điểm và ghi nhận những khoảnh khắc đặc sắc.Hình thành đội ngũ: Gọi ý kiến của các chuyên gia địa phương, những người đam mê du lịch và các kỹ sư công nghệ. <br>
+                            Ra mắt website: Sau quá trình tập trung ý tưởng, xây dựng nội dung và thiết kế giao diện, website chính thức đi vào hoạt động, hứa hẹn mang đến nguồn thông tin du lịch chính xác và bổ ích nhất về Cần Thơ.</p>
                     </div>
                 </div>
             </div>
-            <div class="damMay">
-                <img class="hinhdammay" src="img/clouds.png" alt="">
-                <h1>Dịch vụ nổi bật</h1>
-            </div>
-            <div class="danhGia">
-                <div class="top">
-                    <h3>ĐÁNH GIÁ KHÁCH HÀNG</h3> <br>
-                    <P>Chúng tôi tự hào khi nhận được đánh giá tích cực này và cam kết tiếp tục mang đến trải nghiệm du lịch tuyệt vời cho khách hàng của mình.</P>
-                </div>
-                <div class="comment">
-                    <div class="cm">
-                        <p>Tuyệt vời <br>
-                            ⭐⭐⭐⭐⭐<br>
-                            Trải nghiệm tuyệt vời! Tôi rất hài lòng với dịch vụ chuyên nghiệp và chu đáo của đội ngũ nhân viên. 
-                            Họ đã tận tâm tư vấn và đáp ứng đúng mong đợi của tôi. Chắc chắn sẽ quay lại và giới thiệu cho bạn bè của tôi.
-                        </p>
-                        <div class="avatar">
-                            <img src="https://png.pngtree.com/png-clipart/20190921/original/pngtree-user-avatar-boy-png-image_4693645.jpg" alt="">
-                            <p>Lê Hảo <br>Khách hàng</p>
+            <!-- phần ở dưới -->
+            <div class="introduce-content">
+                <div class="row-1">
+                    <div class="col-1">
+                        <h1>Mục tiêu</h1>
+                        <p>Giúp khách du lịch trong và ngoài nước dễ dàng tìm hiểu, lên kế hoạch và trải nghiệm du lịch tại Cần Thơ một cách tiện lợi.</p>
+                    </div>
+                    <div class="col-2">
+                        <div class="cont-1">
+                            <p>Chính xác</p>
+                            <p>Thông tin được kiểm chứng và cập nhật liên tục để đảm bảo tính tin cậy.</p>
+                        </div>
+                        <div class="cont-2">
+                            <p>Trách nhiệm</p>
+                            <p>Đáp ứng nhanh chóng nhu cầu và giải đáp thắc mắc của du khách</p>
                         </div>
                     </div>
-                    <div class="cm">
-                        <p>Tốt <br>
-                            ⭐⭐⭐⭐⭐ <br>
-                            Trải nghiệm tuyệt vời! Tôi rất hài lòng với dịch vụ chuyên nghiệp và chu đáo của đội ngũ nhân viên. 
-                            Họ đã tận tâm tư vấn và đáp ứng đúng mong đợi của tôi. Chắc chắn sẽ quay lại và giới thiệu cho bạn bè của tôi.
-                        </p>
-                        <div class="avatar">
-                            <img src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-business-people-avatar-icon-user-profile-free-vector-png-image_4815126.jpg" alt="">
-                            <p>An An <br>Khách hàng</p>
-                        </div>
+                </div>
+                <div class="row-2">
+                    <div class="col-1">
+                        <h1>Sứ mệnh</h1>
+                        <p>Quảng bá hình ảnh Cần Thơ đến bạn bè quốc tế, góp phần thúc đẩy du lịch địa phương phát triển bền vững.</p>
                     </div>
-                    <div class="cm">
-                        <p>Tuyệt vời <br>
-                            ⭐⭐⭐⭐⭐ <br>
-                            Trải nghiệm tuyệt vời! Tôi rất hài lòng với dịch vụ chuyên nghiệp và chu đáo của đội ngũ nhân viên. 
-                            Họ đã tận tâm tư vấn và đáp ứng đúng mong đợi của tôi. Chắc chắn sẽ quay lại và giới thiệu cho bạn bè của tôi.
-                        </p>
-                        <div class="avatar">
-                            <img src="https://p7.hiclipart.com/preview/255/44/978/avatar-icon-3d-character-icon-vector-material.jpg" alt="">
-                            <p>Bạch Ngân <br>Khách hàng</p>
+                    <div class="col-2">
+                        <div class="cont-1">
+                            <p>Trãi nghiệm</p>
+                            <p>Luôn hướng tới tối ưu hóa trải nghiệm người dùng, từ giao diện trực quan đến nội dung phong phú, hấp dẫn.</p>
+                        </div>
+                        <div class="cont-2">
+                            <p>Đổi mới</p>
+                            <p>Không ngừng sáng tạo để mang đến những dịch vụ và trải nghiệm du lịch độc đáo nhất.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="dangKy">
-                
+            <!-- nút đặc trưng lớn -->
+            <div class="vanhoa">
+                <div class="background">
+                    <div class="row-1">
+                        <div class="text-inside"><p>Con Người</p></div>
+                        <div class="half">
+                            <div class="full">
+                                <div class="text-inside-2">
+                                    <p>Văn hóa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <div class="content">
+                            Cần Thơ không chỉ nổi bật với những cảnh quan thơ mộng của sông nước,
+                             mà còn là nơi lưu giữ nét đẹp văn hóa truyền thống thông qua các lễ
+                              hội, ẩm thực đặc sắc và cuộc sống đầy màu sắc của người dân địa phương.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- dac trung -->
+            <div class="dacTrung">
+                <div class="amThuc">
+                    <div class="col-1"><strong>Ẩm thực đường phố</strong></div>
+                    <div class="col-2">Từ bún riêu, bánh xèo đến các món hải sản tươi sống, mỗi món ăn là một câu chuyện kể về hương vị của quê hương.</div>
+                </div>
+                <div class="leHoi">
+                    <div class="col-1"><strong>Lễ hội truyền thống</strong></div>
+                    <div class="col-2"> Các dịp lễ hội diễn ra qnh năm là cơ hội để du khách tìm hiểu về phong tục tập quán độc đáo của người dân miền Tây.</div>
+                </div>
+                <div class="gianDi">
+                    <div class="col-1"><strong>Nét đẹp giản dị</strong></div>
+                    <div class="col-2">Giao lưu với người dân địa phương, tham gia các hoạt động cộng đồng sẽ mang đến cho du khách cảm giác ấm áp và thân thuộc.</div>
+                </div>
+                <div class="gianDi">
+                    <div class="col-1"><strong>Nét đẹp giản dị</strong></div>
+                    <div class="col-2">Nơi du khách có thể cảm nhận nhịp sống sôi động, hào phóng và đầy màu sắc.</div>
+                </div>
+                <div class="khamPha">
+                    <div class="col-1"><strong>Những hành trình khám phá</strong></div>
+                    <div class="col-2">Từng trải nghiệm đi thuyền trên sông, thưởng ngoạn hoàng hôn bên bờ nước hay dạo chơi trên những con đường nhỏ đầy ẩn chứa lịch sử và văn hóa.</div>
+                </div>
+            </div>
+            <div class="volka">
+                <div class="vol1">
+                    <h2>Lợi Ích Dành Cho <br> Du Khách</h2>
+                    <div class="vol2">
+                        <img src="img/1-removebg-preview.png" alt="">
+                        <div>
+                            <h3>Hiểu biết sâu sắc</h3>
+                            <p>Cung cấp thông tin tôn nộp về các điểm du lịch, trải nghiệm độc đáo và gợi ý hành trình phù hợp.</p>
+                        </div>
+                    </div>
+                    <div class="vol2">
+                        <img src="img/2-removebg-preview.png" alt="">
+                        <div>
+                            <h3>Trải nghiệm cá nhân hóa</h3>
+                            <p>Lựa chọn hành trình tùy theo sở thích: nghỉ dưỡng, khám phá, ẩm thực...</p>
+                        </div>
+                    </div>
+                    <div class="vol2">
+                        <img src="img/3-removebg-preview.png" alt="">
+                        <div>
+                            <h3>Bản đồ tương tác</h3>
+                            <p>Giúp khách dễ dàng xác định vị trí và lộ trình hợp lý</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- phần dưới cùng -->
         <div class="footer">
             <div class="row-footer">
-                <div class="col about-us">
-                    <p class="footer-title">Về chúng tôi</p>
-                    <p>Our Story</p>
-                    <p>travel blogs & Tips</p>
-                    <p>Working with us</p>
-                    <p>Be our partners</p>
-                </div>
-                <div class="col contact">
-                    <p class="footer-title">Thông tin liên hệ</p>
-                    <p>Toà nhà FPT Polytechnic,
-                        đường số 22, phường Thường Thạnh,
-                        quận Cái Răng, TP Cần Thơ-098 388 1100
-                    </p>
-                </div>
+              <div class="col about-us">
+                <p class="footer-title">Giới thiệu</p>
+                <p>Về Chúng Tôi</p>
+                <p>Bản đồ</p>
+                <p>Điểm đến nổi bật</p>
+                <p>Ẩm thực Cần Thơ</p>
+                <p>Lễ hội & Văn hóa</p>
+                <p>Cẩm nang du lịch</p>
+              </div>
+              <div class="col contact">
+                <p class="footer-title">Điều khoản</p>
+                <p>Điều khoản sử dụng</p>
+                <p>Chính sách bảo mật thông tin</p>
+                <p>Hướng dẫn xuất hóa đơn GTGT</p>
+              </div>
+              <div class="col contact">
+                <p class="footer-title">Điện thoại: (024) 7300 1955</p>
+                <p class="footer-title">Liên hệ</p>
+                <p>Toà nhà FPT Polytechnic, Đ. Số 22, Thường Thạnh, Cái Răng, Cần Thơ</p>
+              </div>
+              <div class="col contact">
+                <p class="footer-title">fanage</p>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCDFPTCT&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=825229549017537" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+              </div>
             </div>
-        </div>
+            <hr>
+            <div class="bottom-footer">
+              <div class="content-footer">
+              <p>Trường Cao đẳng FPT Polytechnic Cần Thơ</p>
+              <p> Người đại diện: VŨ CHÍ THÀNH – Giám đốc khối giáo dục Cao đẳng FPT Polytechnic
+                <p>Mã số cơ sở giáo dục: 0107414525 do Sở Kế hoạch và Đầu tư TP. Hà Nội cấp ngày 13/07/2015</p>
+              </p>
+              <p>       Toà nhà FPT Polytechnic, Đ. Số 22, Thường Thạnh, Cái Răng, Cần Thơ   Email: caodang@fpt.edu.vn</p>
+              <p>
+                © 2015–2025 Trường Cao đẳng FPT Polytechnic – Mọi quyền được bảo lưu</p>
+            </div>
+          </div>
+          </div>
     </div>
     <div class="support">
     </div>
