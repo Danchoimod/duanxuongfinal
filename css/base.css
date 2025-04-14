@@ -19,6 +19,7 @@ html,body {
     overflow: hidden;
 }
 .subscribe {
+    padding: 50px;
     width: 100%;
     background-color: rgb(175, 211, 226);
   }
@@ -37,7 +38,7 @@ html,body {
   
   .subscribe .col-1 .text {
     color: #fff;
-    font-size: 20pt;
+    font-size: 20px;
     line-height: 1.5;
     font-weight: 500;
   }
@@ -67,7 +68,7 @@ html,body {
     background-color: red;
     color: #fff;
     border: none;
-    padding: 5px 20px;
+    padding: 10px 20px;
     border-radius: 5px;
     font-size: 15px;
     transition: background-color 0.3s;

@@ -218,7 +218,7 @@
     height: 250px;
     border-radius: 10px;
     transition: transform 0.3s ease;
-   
+    object-fit: cover;
 }
 
 .explore-item img:hover {

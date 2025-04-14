@@ -1,0 +1,95 @@
+@media (max-width: 768px) {
+    .banner {
+        height: 180px;
+    }
+
+    .overlay-text .title {
+        font-size: 28px;
+    }
+
+    .overlay-text p a {
+        font-size: 16px;
+    }
+
+    .breadcrumb {
+        font-size: 14px;
+    }
+
+    .content-section,
+    .main-layout {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-box,
+    .category-box,
+    .latest-posts,
+    .explore-box {
+        width: 90%;
+    }
+
+    .image-card img,
+    .post img {
+        width: 100%;
+        height: auto;
+    }
+
+    .post img {
+        height: auto;
+    }
+
+    .explore-row {
+        flex-direction: column;
+    }
+
+    .explore-item img {
+        height: 200px;
+    }
+
+    .explore-item p {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    .latest-post-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .latest-post-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .latest-post-item p {
+        font-size: 14px;
+    }
+
+    .latest-post-item small {
+        font-size: 12px;
+    }
+
+    .category-list li {
+        font-size: 14px;
+        padding: 4px 0;
+    }
+
+    .caption {
+        font-size: 14px;
+    }
+
+    .post h4 {
+        font-size: 16px;
+    }
+
+    .post p {
+        font-size: 14px;
+    }
+
+    .explore-box h3,
+    .category-box h3,
+    .latest-posts h3 {
+        font-size: 16px;
+    }
+
+}
