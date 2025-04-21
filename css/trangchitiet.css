@@ -2,7 +2,7 @@
     background-color: #d9f0f0;
     text-align: center;
     padding: 40px 20px;
-    margin-top: 60px; 
+    padding-top: 90px;
 }
 
 .place-container h1 {
@@ -159,12 +159,12 @@
 
 .fill {
   height: 100%;
-  color: white;
+  color: black;
   text-align: center;
   font-size: 13px;
   line-height: 20px;
-  justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .red {
